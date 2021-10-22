@@ -6,7 +6,7 @@ import axios from 'axios';
 
 
 
-const Login = () => {
+export default function Login(){
 
   // const obj={
   //   mobile:"1111111111"
@@ -79,7 +79,5 @@ const styles = StyleSheet.create({
 
   },
 });
-
-export default Login;
 
 
