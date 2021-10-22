@@ -9,8 +9,9 @@ import axios from 'axios';
 const Login = () => {
 
   // const obj={
-  //   mobile:"8007940582"
+  //   mobile:"1111111111"
   // }
+  //111..=mobile no.
 
   const [obj, setMobile] = React.useState({
     mobile:""
@@ -18,12 +19,14 @@ const Login = () => {
 
   const pressHandler = () => {
     // if(
-    //   mobile=='8007940582'
+    //   mobile=='1111111111'
+    //111..=mobile no.
+
     // ){setMobile('')}
     // else{Alert.alert('Invalid')
     // setMobile('')
     // }
-          axios.post('http://192.168.1.251:8000/ ',obj)
+          axios.post('http://localhost:8000/ ',obj)
     .then(response => {
     console.log(response);
     });
@@ -37,7 +40,7 @@ const Login = () => {
   return (
     <SafeAreaView>
       <Image
-        source={require('../assets/supreme-court-of-india-logo.png')}
+        source={require('https://www.mydesijob.com/wp-content/uploads/2019/09/Supreme-Court.png')}
         style={{ width: 300, height: 450 }}
       />
 
